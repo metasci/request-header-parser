@@ -6,7 +6,7 @@ var app = express();
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.get('/', function(req, res) {
-  res.sendFile(process.cwd() + "/public/index.html");
+  res.sendfile(process.cwd() + "/public/index.html");
 });
 
 var port = process.env.PORT || 8080;
